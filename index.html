@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Oascent Automation</title>
+    <style>
+        /* We'll add CSS here later */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f8ff;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    .feature-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#colorBtn {
+  background: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}    
+    </style>
+</head>
+<div class="feature-box">
+  <h2>My Skills</h2>
+  <ul>
+    <li>Automation</li>
+    <li>Fast Results</li>
+    <li>Customer Satisfaction</li>
+  </ul>
+</div>
+
+<button id="colorBtn">Try A Color</button>
+<body>
+    <div class="container">
+        <h1>Welcome to the Future</h1>
+        <p>All your AI Needs</p>
+        <button onclick="showMessage()">The Matrix</button>
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("demo").innerHTML = "You clicked it!";
+        }
+    </script>
+<script>
+document.getElementById("colorBtn").addEventListener("click", function() {
+  // CHANGED TO SIMPLE COLORS:
+  const colors = ["red", "blue", "black", "purple", "pink"];
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+  document.body.style.background = randomColor;
+});
+</script>
+</body>
+</html>
